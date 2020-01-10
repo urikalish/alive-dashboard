@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alive Dashboard</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play"/>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
+    <div class="background">
+        <video id="background-video" class="background-vid" autoplay="true" muted="true" loop="true" width="1000px">
+            <source type="video/mp4" src="/media/background.mp4"/>
+        </video>
+        <div class="background-filter"></div>
+    </div>
     <main>
-        <h1>Alive Dashboard</h1>
+        <h1>Alive Dashboard</h1>        
     </main>
     <script type="module" src="./js/index.js"></script>
 </body>

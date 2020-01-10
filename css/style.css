@@ -17,8 +17,37 @@ body {
     font-family: Play, sans-serif;
 }
 
+.background {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;    
+}
+
+.background-vid {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.background-filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;       
+}
+
 main {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
