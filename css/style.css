@@ -17,6 +17,11 @@ body {
     font-family: Play, sans-serif;
 }
 
+strong {
+    font-style: normal;
+    font-weight: 700;
+}
+
 .background {
     position: fixed;
     min-width: 100%;
@@ -32,9 +37,20 @@ body {
     min-height: 100%;
 }
 
-.background-filter {
+.background-filter-header {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #000;
+    border-bottom: 1px solid #fff;  
+    opacity: 0.75;
+}
+
+.background-filter-main {
+    position: absolute;
+    top: 100px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -42,9 +58,22 @@ body {
     opacity: 0.5;       
 }
 
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;      
+}
+
+.title {
+    font-size: 50px;    
+}
+
 main {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 100px;
     bottom: 0;
     left: 0;
     right: 0;
