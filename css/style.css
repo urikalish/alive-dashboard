@@ -77,8 +77,9 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    overflow: hidden;
     display: flex;    
+    overflow: hidden;
+    padding: 40px;
 }
 
 @keyframes breath {
@@ -89,7 +90,7 @@ main {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
     33% {
-        transform: scale(1.15);
+        transform: scale(1.1);
         background-color: #555;
         border: 1px solid #777;
         border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
@@ -103,7 +104,15 @@ main {
 }
 
 .cell {
-    margin: 30px;
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;    
+}
+
+.cell-background {
+    position: absolute;
+    top: 0;
+    left: 0;
     min-width: 250px;
     max-width: 250px;
     min-height: 250px;
@@ -114,29 +123,29 @@ main {
     opacity: 0.75;
 }
   
-.cell:nth-child(1) {
+.cell:nth-child(1) > .cell-background {
     animation: breath 5.0s 0.0s ease infinite;
 }
-.cell:nth-child(2) {
+.cell:nth-child(2) > .cell-background {
     animation: breath 5.0s 0.25s ease infinite;
 }
-.cell:nth-child(3) {
+.cell:nth-child(3) > .cell-background {
     animation: breath 5.0s 0.5s ease infinite;
 }
-.cell:nth-child(4) {
+.cell:nth-child(4) > .cell-background {
     animation: breath 5.0s 0.75s ease infinite;
 }
-.cell:nth-child(5) {
+.cell:nth-child(5) > .cell-background {
     animation: breath 5.0s 1.0s ease infinite;
 }
 
-.b {
+.cell-data {
+    position: absolute;
+    left: 50px;
+    top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px 22px 22px 22px 22px;
-    position: absolute;
-    left: 80px;
-    top: 80px;
     line-height: 20px;
 }
 .product-name {
