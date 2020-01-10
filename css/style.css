@@ -68,7 +68,8 @@ header {
 }
 
 .title {
-    font-size: 50px;    
+    font-size: 50px;
+    user-select: none;    
 }
 
 main {
@@ -107,7 +108,8 @@ main {
 .cell {
     position: relative;
     min-width: 300px;
-    min-height: 300px;    
+    min-height: 300px;
+    user-select: none;    
 }
 
 .cell-background {
