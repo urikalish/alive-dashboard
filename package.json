@@ -1,0 +1,26 @@
+{
+  "name": "alive-dashboard",
+  "version": "1.0.0",
+  "description": "Alive Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urikalish/alive-dashboard.git"
+  },
+  "keywords": [
+    "alive",
+    "dashboard"
+  ],
+  "author": "Uri Kalish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urikalish/alive-dashboard/issues"
+  },
+  "homepage": "https://github.com/urikalish/alive-dashboard#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
