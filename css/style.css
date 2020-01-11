@@ -44,7 +44,7 @@ strong {
     right: 0;
     height: 100px;
     background-color: #000;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 .background-filter-main {
@@ -54,7 +54,7 @@ strong {
     left: 0;
     right: 0;
     background-color: #000;
-    opacity: 0.6;       
+    opacity: 0.75;       
 }
 
 header {
