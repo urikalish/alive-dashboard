@@ -43,8 +43,8 @@ strong {
     left: 0;
     right: 0;
     height: 100px;
-    background-color: #000;
-    opacity: 0.85;
+    background-color: #333;
+    opacity: 0.5;
 }
 
 .background-filter-main {
@@ -53,8 +53,8 @@ strong {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #000;
-    opacity: 0.75;       
+    background-color: #999;
+    opacity: 0.5;
 }
 
 header {
