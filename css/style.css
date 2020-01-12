@@ -86,7 +86,7 @@ main {
 .cell {
     position: relative;
     min-width: 300px;
-    min-height: 300px;
+    min-height: 280px;
     user-select: none;    
 }
 
@@ -140,15 +140,41 @@ main {
 .cell:nth-child(5) > .cell-data {
     animation-delay: 1.0s;
 }
+.cell:nth-child(6) > .cell-background,
+.cell:nth-child(6) > .cell-data {
+    animation-delay: 1.25s;
+}
+.cell:nth-child(7) > .cell-background,
+.cell:nth-child(7) > .cell-data {
+    animation-delay: 1.5s;
+}
+.cell:nth-child(8) > .cell-background,
+.cell:nth-child(8) > .cell-data {
+    animation-delay: 1.75s;
+}
+.cell:nth-child(9) > .cell-background,
+.cell:nth-child(9) > .cell-data {
+    animation-delay: 2.0s;
+}
+.cell:nth-child(10) > .cell-background,
+.cell:nth-child(10) > .cell-data {
+    animation-delay: 2.25s;
+}
+.cell:nth-child(11) > .cell-background,
+.cell:nth-child(11) > .cell-data {
+    animation-delay: 2.5s;
+}
+.cell:nth-child(12) > .cell-background,
+.cell:nth-child(13) > .cell-data {
+    animation-delay: 2.75s;
+}
 
 .cell-background {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 250px;
-    max-width: 250px;
     min-height: 250px;
-    max-height: 250px;
     border: 1px solid #333;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     background-image: linear-gradient(to right, #222, #666);
